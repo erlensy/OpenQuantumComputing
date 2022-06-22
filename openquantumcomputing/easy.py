@@ -58,7 +58,7 @@ class QAOAtest(QAOABase):
             #circ.s([q[0], q[1]])
             #circ.h([q[0], q[1]])
             #circ.cx(q[0], q[1])
-            ##circ.rz(-beta, q[1])
+            #circ.rz(-beta, q[1])
             #circ.cx(q[0], q[1])
             #circ.h([q[0], q[1]])
             #circ.sdg([q[0], q[1]])
