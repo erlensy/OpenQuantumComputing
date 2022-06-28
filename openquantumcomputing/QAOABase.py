@@ -90,7 +90,7 @@ class QAOABase:
                 E = 0
                 E2 = 0
                 for string in counts:
-                    cost = self.cost(string, params)
+                    cost = self.cost(string[::-1], params)
                     E += cost*counts[string]
                     E2 += cost**2*counts[string];
                 if n_shots == 1:
@@ -107,7 +107,7 @@ class QAOABase:
             E = 0
             E2 = 0
             for string in counts_list:
-                cost = self.cost(string, params)
+                cost = self.cost(string[::-1], params)
                 E += cost*counts_list[string]
                 E2 += cost**2*counts_list[string];
             if n_shots == 1:
